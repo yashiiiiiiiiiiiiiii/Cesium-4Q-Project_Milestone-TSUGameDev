@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    background-image: url(images/bg/homescreen.gif); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#gameWindow {
+    width: 800px;
+    height: 600px;
+    background-color: rgba(33, 158, 188, 0.1); 
+    border: 5px solid #8ecae6;
+    border-radius: 12px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: 0px 0px 40px rgba(0,0,0,0.8);
+    overflow: hidden;
+}
+
+#statusBar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(2, 48, 71, 0.9);
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 3px solid #ffb703;
+}
+
+.textbox {
+    background: linear-gradient(to bottom, rgba(2, 48, 71, 0.98), #023047);
+    padding: 25px;
+    border-top: 5px solid #ffb703;
+    min-height: 200px;
+}
+
+#speakerNameDisplay {
+    color: #fb8500;
+    margin: 0 0 10px 0;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+
+button {
+    background-color: #fb8500;
+    color: #023047;
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #ffb703;
+    transform: scale(1.05);
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 2px solid #8ecae6;
+    background-color: rgba(255, 255, 255, 0.9);
+}

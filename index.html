@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Summer Memories - Home</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkExistingUser()">
+    <div id="gameWindow" class="home-bg-active">
+        <main class="textbox translucent">
+            <h1 id="greetings">Summer Memories</h1>
+            <h3>
+                This is a visual novel on your final thirty days of summer vacation before the decisive entrance exams. 
+                You have met someone you deem your true love, and it is your job is to establish a relationship with her.
+
+           </h3>
+            <h2>How to Play</h2>
+            <p>Step 1: Enter your name and click Start to begin your 30-day journey.</p>
+            <p>Step 2:Read the story text in the navy box at the bottom.</p>
+            <p>Step 3: Click the orange choice buttons to make decisions. Decisions increase your Points with Yonna.</p>
+            <p>Goal: Reach the end of summer with the highest Points possible to see the best ending!</p>
+            
+            <form name="player-form" action="game.html" onsubmit="return saveUsername()">
+                <label for="username">Enter Username:</label><br>
+                <input type="text" name="username" id="username" required pattern="[A-Za-z\d_]*">
+                <br>
+                <button type="submit">Start Game</button>
+            </form>
+        </main>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
